@@ -1,0 +1,31 @@
+<div class="menu">
+  <div>
+    <header>
+      <nav>
+        <ul>
+          <li>{{#link-to 'index'}}Home{{/link-to}}</li>
+          <li>{{#link-to 'page' 'ember'}}Ember.js{{/link-to}}</li>
+          <li>{{#link-to 'page' 'baelte'}}baelte{{/link-to}}</li>
+        </ul>
+
+      </nav>
+    </header>
+    <main class="stack">
+
+      {{#let model as |post|}}
+        <article class="post-content {{post_class}} {{unless post.image 'no-image'}}">
+          <div class="post-content-body">
+            {{markdown-to-html post.content tagName=""}}
+          </div>
+        </article>
+      {{/let}}
+    </main>
+
+
+    <footer>
+      2019, Kenneth Larsen. You can contact me on <a href="https://twitter.com/kennethlarsen">Twitter</a>
+    </footer>
+  </div>
+</div>
+
+

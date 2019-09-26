@@ -1,0 +1,9 @@
+<article class="post-card {{post_class}} no-image">
+  <div class="post-card-content">
+    {{#link-to 'post' @post.id}}
+      <h3 class="post-card-title">{{@post.title}}</h3>
+    {{/link-to}}
+
+    <p>{{@post.excerpt}}</p>
+  </div>
+</article>

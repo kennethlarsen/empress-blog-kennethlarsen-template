@@ -1,0 +1,46 @@
+<div class="menu">
+  <div>
+    <header>
+      <nav>
+        <ul>
+          <li>{{#link-to 'index'}}Home{{/link-to}}</li>
+          <li>{{#link-to 'page' 'ember'}}Ember.js{{/link-to}}</li>
+          <li><a href="https://github.com/kennethlarsen/baelte" target="_blank">baelte</a></li>
+        </ul>
+
+      </nav>
+    </header>
+    <main class="stack">
+      <h1>Hello, I'm Kenneth.</h1>
+      <p>I'm a member of the <a href="https://emberjs.com/team/">Ember.js Learning Core Team</a> & an engineering manager at <a href="https://clark.de">CLARK.</a></p>
+
+      <p>I'm currently working with Ember.js and trying to learn Rust.</p>
+
+      <p>Outside of tech I spent my time on <a href="https://en.wikipedia.org/wiki/Birdwatching">birding</a>, <a href="http://www.chessgames.com/perl/chessgame?gid=1139719">chess</a>, and <a href="https://www.youtube.com/watch?v=665lMKUB1xc">classical music.</a></p>
+
+      <h2>Sometimes I write things</h2>
+      <div class="post-feed">
+        {{#each (sort-by 'date:desc' model) as |post index|}}
+          <PostCard @post={{post}} @index={{index}}/>
+        {{/each}}
+      </div>
+    </main>
+
+
+    <footer>
+  2019, Kenneth Larsen. You can contact me on <a href="https://twitter.com/kennethlarsen">Twitter</a>
+</footer>
+  </div>
+
+
+  {{#if (route-is "index")}}
+      {{#if blog.description}}
+      <!-- <header class="page-head"> -->
+      <!--     <h2 class="page-head-title">{{blog.description}}</h2> -->
+      <!-- </header> -->
+      {{/if}}
+  {{/if}}
+
+
+
+</div>
