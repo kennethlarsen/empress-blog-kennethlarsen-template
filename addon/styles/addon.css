@@ -63,7 +63,7 @@ p {
 
 pre {
   margin-top: var(--s0);
-
+  width: 80%;
 }
 
 pre > code {
@@ -142,4 +142,36 @@ main {
 
 .font-size\:big {
   font-size: var(--font-size-big) !important;
+}
+
+
+@media only screen and (max-width: 850px) {
+  main {
+    padding-left: var(--s0);
+  }
+
+  h3 {
+    font-size: var(--font-size-small);
+
+  }
+  h2 {
+    font-size: var(--font-size-medium);
+  }
+
+  h1 {
+    font-size: var(--font-size-biggish);
+  }
+
+  p {
+    font-size: var(--font-size-base);
+  }
+
+  pre {
+    overflow-x: auto;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+ }
 }
