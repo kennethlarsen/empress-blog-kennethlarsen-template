@@ -4,41 +4,68 @@
 
     <main class="stack">
 
-    {{#let model.post as |post|}}
+      {{#let model.post as |post|}}
       <article class="post-content {{post_class}} {{unless post.image 'no-image'}}">
 
-          <header class="post-content-header">
-              <h1 class="post-content-title">{{post.title}}</h1>
-          </header>
+        <header class="post-content-header">
+          <h1 class="post-content-title">{{post.title}}</h1>
+        </header>
 
-          <div class="post-content-body">
-              {{markdown-to-html post.content tagName=""}}
-          </div>
+        <div class="post-content-body">
+          {{markdown-to-html post.content tagName=""}}
+        </div>
 
-          <footer class="post-content-footer">
+        <footer class="post-content-footer">
 
-              {{!-- There are two options for how we display the byline/author-info.
+          {{!-- There are two options for how we display the byline/author-info.
               If the post has more than one author, we load a specific template
               from includes/byline-multiple.hbs, otherwise, we just use the
               default byline. --}}
 
-          </footer>
+        </footer>
 
-          {{!--
+        {{!--
           <section class="post-content-comments">
               If you want to embed comments, this is a good place to do it!
           </section>
           --}}
+        {{! template-lint-disable }}
+        <!-- Begin Mailchimp Signup Form -->
+        <div id="mc_embed_signup" class="newsletter">
+          <form
+            action="https://kennethlarsen.us4.list-manage.com/subscribe/post?u=80e0d5582c25cffec5aeca3f0&amp;id=ec241291ea"
+            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+            target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+              <h2>Subscribe</h2>
+              <p>Get the Building Things newsletter and be the first to know when a new post is out.</p>
+              <div class="mc-field-group">
+                <label for="mce-EMAIL">Email Address <span class="asterisk">(required)</span>
+                </label><br>
+                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+              </div>
+              <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+              </div>
+              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                  name="b_80e0d5582c25cffec5aeca3f0_ec241291ea" tabindex="-1" value=""></div>
+              <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
+                  class="button"></div>
+            </div>
+          </form>
+        </div>
+
+        <!--End mc_embed_signup-->
 
       </article>
-    {{/let}}
-  </main>
+      {{/let}}
+    </main>
 
 
     <footer>
-      2019, Kenneth Larsen. You can contact me on <a href="https://twitter.com/kennethlarsen">Twitter</a> | Built with <a href="https://github.com/empress/empress-blog">Empress 💖</a>
+      2019, Kenneth Larsen. You can contact me on <a href="https://twitter.com/kennethlarsen">Twitter</a> | Built with
+      <a href="https://github.com/empress/empress-blog">Empress 💖</a>
     </footer>
   </div>
 </div>
-
-
