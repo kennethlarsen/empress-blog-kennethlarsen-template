@@ -174,4 +174,41 @@ main {
     white-space: -o-pre-wrap;
     word-wrap: break-word;
  }
+
+ .newsletter input {
+    height: 45px;
+    width: 100%;
+  }
+}
+
+/* Mailchimp */
+.newsletter {
+  margin-top: var(--s2);
+  background-color: #222;
+  width: 100%;
+  padding: var(--s1);
+}
+
+.newsletter h2, .newsletter p, .newsletter label, .newsletter span {
+  color: white;
+
+}
+
+.newsletter input {
+  border: white 3px solid;
+  height: 45px;
+  width: 100%;
+  font-size: var(--font-size-base);
+  color: white;
+  background-color: #222;
+}
+
+.mc-field-group {
+  margin-top: var(--s1);
+}
+
+#mc-embedded-subscribe {
+  margin-top: var(--s1);
+  background-color: #222;
+  font-size: var(--font-size-base);
 }
