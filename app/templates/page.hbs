@@ -4,19 +4,20 @@
     <main class="stack">
 
       {{#let model as |post|}}
-        <article class="post-content {{post_class}} {{unless post.image 'no-image'}}">
-          <div class="post-content-body">
-            {{markdown-to-html post.content tagName=""}}
-          </div>
-        </article>
+      <article class="post-content {{post_class}} {{unless post.image 'no-image'}}">
+        <h1 class="page-heading"><span>{{post.title}}</span></h1>
+
+        <div class="post-content-body">
+          {{markdown-to-html post.content tagName=""}}
+        </div>
+      </article>
       {{/let}}
     </main>
 
 
     <footer>
-      2019, Kenneth Larsen. You can contact me on <a href="https://twitter.com/kennethlarsen">Twitter</a> | Built with <a href="https://github.com/empress/empress-blog">Empress 💖</a>
+      2019, Kenneth Larsen. You can contact me on <a href="https://twitter.com/kennethlarsen">Twitter</a> | Built with
+      <a href="https://github.com/empress/empress-blog">Empress 💖</a>
     </footer>
   </div>
 </div>
-
-

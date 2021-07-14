@@ -5,6 +5,7 @@ imageMeta:
   attribution:
   attributionLink:
 featured: true
+excerpt: lorem lorem impspada asd ad dasd asdaasdqrw qr q lorem lorem impspada asd ad dasd asdaasdqrw qr q lorem lorem impspada asd ad dasd asdaasdqrw qr q 
 authors:
   - ghost
 date: Tue Jun 12 2018 18:59:59 GMT+0100 (IST)
