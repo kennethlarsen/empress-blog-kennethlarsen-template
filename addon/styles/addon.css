@@ -111,9 +111,10 @@ main {
 }
 
 li {
-  list-style: none;
+  list-style: circle;
   font-size: var(--font-size-base);
   margin-top: var(--s0);
+  margin-left: var(--s1);
 }
 main {
   padding-bottom: var(--s3);
